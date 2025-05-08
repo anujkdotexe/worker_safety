@@ -1,0 +1,55 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.db
+*.sqlite3
+
+# Virtual Environment
+venv/
+env/
+
+# PyCharm, VS Code, and other IDEs
+.idea/
+.vscode/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Logs and temporary files
+*.log
+*.bak
+*.swp
+*.swo
+
+# YOLOv5 and other model-related files
+*.weights
+*.pt
+*.ckpt
+*.h5
+*.pth
+
+# MediaPipe model files
+mediapipe_model/
+
+# Compiled Cython files
+*.c
+*.cpp
+*.so
+
+# Python build directories
+build/
+dist/
+*.egg-info/
+
+# System-specific files
+.DS_Store
+Thumbs.db
+
+# Mac-specific files
+.AppleDouble
+.LSOverride
+
+# Miscellaneous
+*.env
