@@ -9,18 +9,18 @@ import utils.shared as shared
 def main():
     print("🚀 Starting Worker Safety Monitor - Press Q to quit")
     
-    # Initialize components
+    # Initialize components (unchanged)
     detector = SafetyDetector()
     alarm = Alarm()
     
-    # Camera sources
+    # Camera setup (unchanged)
     try:
         with open("configs/cameras.txt") as f:
             cameras = [line.strip() for line in f if line.strip()]
     except:
         cameras = ["0"]  # Default webcam
     
-    # Start camera threads
+    # Start camera threads (unchanged)
     threads = []
     for cam_id, source in enumerate(cameras):
         print(f"📷 Starting camera {cam_id} (source: {source})")
@@ -29,7 +29,7 @@ def main():
         threads.append(thread)
         time.sleep(0.3)
     
-    # Main loop
+    # Main loop (unchanged)
     try:
         while not shared.shutdown_requested:
             if cv2.waitKey(1) & 0xFF == ord('q'):
