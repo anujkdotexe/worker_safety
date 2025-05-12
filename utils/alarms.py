@@ -7,7 +7,7 @@ class Alarm:
         self.last_alert = 0
         # Connect to MongoDB
         try:
-            self.client = MongoClient("mongodb://localhost:27017/", connectTimeoutMS=3000)
+            self.client = MongoClient("mongodb://localhost:27017/workers_safety", connectTimeoutMS=3000)
             self.db = self.client["worker_safety"]
             self.incidents = self.db["incidents"]
             print("✅ Connected to MongoDB")

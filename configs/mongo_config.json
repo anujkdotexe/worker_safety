@@ -1,5 +1,5 @@
 {
-  "uri": "mongodb://localhost:27017",
+  "uri": "mmongodb://localhost:27017/workers_safety",
   "database": "safety_monitoring",
   "collection": "incidents"
 }
