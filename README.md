@@ -28,7 +28,7 @@ worker_safety/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourname/worker_safety.git
+   git clone https://github.com/anujkdotexe/worker_safety.git
    cd worker_safety
    ```
 
